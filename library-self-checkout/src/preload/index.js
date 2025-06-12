@@ -1,8 +1,20 @@
 import { contextBridge } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
+const { useHistory } = require('react-router-dom'); // Import useHistory from React Router
+
 
 // Custom APIs for renderer
-const api = {}
+const api = {
+
+  navigateToNewPage: () => {
+    // Use useHistory to navigate to a new page
+    const history = useHistory();
+    history.push('/new-page');
+  },
+
+
+}
+
 
 // Use `contextBridge` APIs to expose Electron APIs to
 // renderer only if context isolation is enabled, otherwise
