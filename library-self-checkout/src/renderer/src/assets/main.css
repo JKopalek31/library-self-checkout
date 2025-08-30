@@ -1,6 +1,14 @@
 /* @import './base.css'; */
 @import "tailwindcss";
 
+@theme{
+  --color-text-teally:#008080;
+  --color-maroon: #630000;
+  --color-salmon: #D8B6A4;
+  --color-offwhite: #EEEBDD;
+  --color-darkbrown: #5C4033;
+  --color-coffee: #E5AA70;
+}
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */

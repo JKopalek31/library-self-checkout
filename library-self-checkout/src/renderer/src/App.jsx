@@ -1,6 +1,7 @@
 import TitlePage from './pages/TitlePage/TitlePage'
 import UserAuthenicationPage from './pages/UserAuthenticationPage/UserAuthenicationPage';
-import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
+// import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
+import CheckoutPageOCR from './pages/CheckoutPage/CheckoutPageOCR';
 import SummaryPage from './pages/SummaryPage/SummaryPage';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<TitlePage />} />
         <Route path="/auth-page" element={<UserAuthenicationPage />} />
-        <Route path="/checkout-page" element={<CheckoutPage />}/>
+        {/* <Route path="/checkout-page" element={<CheckoutPage />}/> */}
+        <Route path="/checkout-page" element={<CheckoutPageOCR />}/>
         <Route path="/summary-page" element={<SummaryPage />}/>
       </Routes>
     </Router>

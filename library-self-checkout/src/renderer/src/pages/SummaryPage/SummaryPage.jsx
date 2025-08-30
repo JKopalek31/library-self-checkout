@@ -12,9 +12,10 @@ const SummaryPage = () => {
         </div>
         <div className="grid grid-cols-2 h-3/4 bg-teal-200">
             <div className="bg-red-400">
-
+              <h1>Here is where the summary goes somehow</h1>
             </div>
             <div className="bg-slate-400">
+              <h1>Here is where there will be some kind of list for checkout items</h1>
 
             </div>
 
